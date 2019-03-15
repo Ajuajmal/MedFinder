@@ -368,7 +368,9 @@ font-family: 'Montserrat', sans-serif;
 .btn-show-pass.active {
   color: #111111;
 }
-
+.big{
+  font-size: 130%;
+}
 /*------------------------------------------------------------------
 [ Button ]*/
 .container-login100-form-btn {
