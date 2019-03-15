@@ -1,2 +1,2 @@
-# MedFinder
+# MedFind
 A medicine finder
