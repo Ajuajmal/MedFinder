@@ -8,6 +8,7 @@ from django.shortcuts import render
 # Create your views here.
 from .models import Post
 
+from django.contrib.auth.decorators import login_required
 
 def index(request):
     context = {
