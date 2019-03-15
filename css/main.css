@@ -192,7 +192,7 @@ iframe {
   background: transparent;
   border-radius: 10px;
   background-color: #efebe8 !important;
-  height: 60vh;
+  height: 70vh;
 }
 
 
@@ -519,7 +519,7 @@ font-family: 'Montserrat', sans-serif;
 [ Responsive ]*/
 @media (max-width: 576px) {
   .wrap-login100 {
-    padding-top: 61px
+    padding-top: 76px
   }
 }
 /*MEDIA QUERY*/
