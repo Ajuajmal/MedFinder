@@ -5,7 +5,7 @@ html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
-a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a{background-color:transparent;-webkit-text-decoration-skip:objects;text-decoration: none;}
 a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
 dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
@@ -164,7 +164,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .med-pink,.med-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
 .med-purple,.med-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
 .med-deep-purple,.med-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
-.med-red,.med-hover-red:hover{color:#4834d4!important;background-color:#ffff!important}
+.med-red,.med-hover-red:hover{color:#2d3436!important;background-color:#ffff!important}
 .med-sand,.med-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
 .med-teal,.med-hover-teal:hover{color:#fff!important;background-color:#009688!important}
 .med-yellow,.med-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
@@ -246,4 +246,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     font-size: 130%;
     font-weight: 400;
     
+}
+.low-weight{
+    font-weight: 100;
 }
