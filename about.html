@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>About US - MedFind</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/main1.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/iconmonstr-iconic-font.min.css">
+<link rel="favorite icon" href="images/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.med-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+
+
+<div class="med-top">
+  <div class="med-bar med-red med-card med-left-align med-large">
+    <a class="med-bar-item med-button med-hide-medium med-hide-large med-right med-padding-large med-hover-white med-large med-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="./index.html" class="med-bar-item med-button med-padding-large med-white">Home</a>
+
+    <a href="./works.html" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">How it Works </a>
+    <a href="./about.html" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">About us</a>
+    <a href="./contact.html" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">Contact</a>
+  </div>
+
+
+  <div id="navDemo" class="med-bar-block med-white med-hide med-hide-large med-hide-medium med-large">
+ 
+    <a href="./works.html" class="med-bar-item med-button med-padding-large">How i works</a>
+    <a href="./about.html" class="med-bar-item med-button med-padding-large">About us</a>
+    <a href="./contact.html" class="med-bar-item med-button med-padding-large">Contact</a>
+  </div>
+</div>
+
+
+<header class="med-container med-red med-center padd" >
+    <h1 class="med-margin med-jumbo"><div class="med-green inline">Med</div><div class="med-white inline"><span class="big">F</span>ind</div>  </span></h1>
+</header>
+
+
+
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("med-show") == -1) {
+    x.className += " med-show";
+  } else {
+    x.className = x.className.replace(" med-show", "");
+  }
+}
+
+function addClass() {
+  document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
+
+</script>
+
+</body>
+</html>
