@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'login',
     'social_django',
     'home',
+    'addmed',
 
 ]
 

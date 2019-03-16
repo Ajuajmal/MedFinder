@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="{% static 'home/css/style.css' %}"><link rel="stylesheet" href="{% static 'home/css/main1.css' %}">
 <link rel="stylesheet" href="{% static 'home/css/iconmonstr-iconic-font.min.css' %}">
-
+<link rel="favorite icon" href="{% static 'home/images/favicon.png' %">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css' %}" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css">
@@ -20,29 +20,29 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <body>
 
 
-<div class="med-top">
-  <div class="med-bar med-red med-card med-left-align med-large">
-    <a class="med-bar-item med-button med-hide-medium med-hide-large med-right med-padding-large med-hover-white med-large med-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="med-bar-item med-button med-padding-large med-white">Home</a>
-    <a href="#" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">Link 1</a>
-    <a href="#" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">Link 2</a>
-    <a href="#" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">Link 3</a>
-    <a href="#" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">Link 4</a>
-  </div>
+  <div class="med-top">
+    <div class="med-bar med-red med-card med-left-align med-large">
+      <a class="med-bar-item med-button med-hide-medium med-hide-large med-right med-padding-large med-hover-white med-large med-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="./index.html" class="med-bar-item med-button med-padding-large med-white">Home</a>
+
+      <a href="./works.html" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">How it works</a>
+      <a href="./about.html" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">About us</a>
+      <a href="./contact.html" class="med-bar-item med-button med-hide-small med-padding-large med-hover-white">Contact</a>
+    </div>
 
 
-  <div id="navDemo" class="med-bar-block med-white med-hide med-hide-large med-hide-medium med-large">
-    <a href="#" class="med-bar-item med-button med-padding-large">Link 1</a>
-    <a href="#" class="med-bar-item med-button med-padding-large">Link 2</a>
-    <a href="#" class="med-bar-item med-button med-padding-large">Link 3</a>
-    <a href="#" class="med-bar-item med-button med-padding-large">Link 4</a>
+    <div id="navDemo" class="med-bar-block med-white med-hide med-hide-large med-hide-medium med-large">
+
+      <a href="./works.html" class="med-bar-item med-button med-padding-large">How it Works</a>
+      <a href="./about.html" class="med-bar-item med-button med-padding-large">About us</a>
+      <a href="./contact.html" class="med-bar-item med-button med-padding-large">Contact</a>
+    </div>
   </div>
-</div>
 
 
 <header class="med-container med-red med-center padd" >
   <h1 class="med-margin med-jumbo"><div class="med-green inline">Med</div><div class="med-white inline"><span class="big">F</span>ind</div>  </span></h1>
-  <p class="med-xlarge">Medicines Near You !!</p>
+ <div class="no-padding"><p class="med-xlarge">Where Medicine Comes First</p></div>
 {% if user.is_authenticated %}
   <div class="s130">
         <form>
@@ -102,11 +102,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="med-content">
 
       <div class="med-third med-center">
-        <i class="fas fa-briefcase-medical med-padding-64 med-text-red "></i>
+        <i class="fas fa-capsules med-padding-64 med-text-red "></i>
       </div>
       <div class="med-twothird"></div>
-      <h1>Lorem Ipsum</h1>
-      <h5 class="med-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1 style="low-weight">Get your Pills Fast !</h1>
+      <h5 class="med-padding-32">MedFind brings medicine to the forefront. Now it's easy and effective, so leave your doubts behind and check the availabilty of medicine that you need in the nearest medical store.</h5>
 
     </div>
 
@@ -118,35 +118,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="med-row-padding  med-padding-64 med-container">
   <div class="med-content">
     <div class="med-third med-center">
-      <i class="fas fa-capsules med-padding-64 med-text-red med-margin-right"></i>
+      <i class=" fas fa-briefcase-medical med-padding-64 med-text-red med-margin-right"></i>
     </div>
 
     <div class="med-twothird"></div>
-      <h1>Lorem Ipsum</h1>
-      <h5 class="med-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+      <h1>Wealth is Health !</h1>
+      <h5 class="med-padding-32">Better medicine ensures fast curing.MedFind helps you get the best medicines     recommended by great doctors whenever you need it.</h5>
 
 
     </div>
   </div>
 </div>
 
-<div class="med-container med-black med-center med-opacity med-padding-64">
-    <h1 class="med-margin med-xlarge">Quote of the day: live life</h1>
-</div>
 
-<!--
-<footer class="med-container med-padding-64 med-center med-opacity">
-  <div class="med-xlarge med-padding-32">
-    <i class="fa fa-facebook-official med-hover-opacity"></i>
-    <i class="fa fa-instagram med-hover-opacity"></i>
-    <i class="fa fa-snapchat med-hover-opacity"></i>
-    <i class="fa fa-pinterest-p med-hover-opacity"></i>
-    <i class="fa fa-twitter med-hover-opacity"></i>
-    <i class="fa fa-linkedin med-hover-opacity"></i>
- </div>
 
-</footer>
--->
+
 <script>
 
 function myFunction() {

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+  <form name="myform" method="POST" action="{% url 'search' %}">
+    {% csrf_token %}
+    <input type="text" name="search" placeholder="Search" />
+</form>
+  {% for addmed in meds %}
+
+
+
+<h2>{{ addmed.name }}<</h2>
+
+<ul>
+  <li>{{ addmed.brand }}</li>
+  <li>{{ addmed.stock }}</li>
+  <li>{{ addmed.exp_date }}</li>
+</ul>
+{% endfor %}
+
+</body>
+</html>
